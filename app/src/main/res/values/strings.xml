@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Sustainable Kitchen</string>
+    <string name="title_home">Home</string>
+    <string name="title_recipes">Recipes</string>
+    <string name="title_garden">Garden</string>
+    <string name="title_log">Log</string>
+    <string name="title_food">Food</string>
+    <string name="available_food">Available Food</string>
+    <string name="log_food">Log Food</string>
+    <string name="recipes">Recipes</string>
+    <string name="my_garden">My Garden</string>
+    <string name="scanner">Barcode Scanner</string>
+    <string name="manual">Manual Input</string>
+    <string name="scannerOn">Barcode Scanner On</string>
+    <string name="scannerOff">Barcode Scanner Off</string>
+    <string name="manualOn">Manual Input On</string>
+    <string name="manualOff">Manual Input Off</string>
+    <string name="barcodeData">Barcode Data</string>
+    <string name="confirmation">Confirm</string>
+    <string name="scan">Scan Something...</string>
+
+
+</resources>

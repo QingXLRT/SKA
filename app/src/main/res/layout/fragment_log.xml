@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/barcodeScannerBtn"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/button_background_color"
+        android:checked="true"
+        android:text="@string/scanner"
+        android:textColor="@color/button_text_color"
+        app:layout_constraintBottom_toTopOf="@+id/scannerSurfaceView"
+        app:layout_constraintEnd_toStartOf="@+id/manualInputBtn"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <Button
+        android:id="@+id/manualInputBtn"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/button_unselected_background_color"
+        android:text="@string/manual"
+        android:textColor="@color/button_text_color"
+        app:layout_constraintBottom_toTopOf="@+id/scannerSurfaceView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/barcodeScannerBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <SurfaceView
+        android:id="@+id/scannerSurfaceView"
+        android:layout_width="363dp"
+        android:layout_height="376dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/productDescriptortxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/productDescriptortxt"
+        android:layout_width="380dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center|center_horizontal"
+        android:text="@string/scan"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/confirmationBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scannerSurfaceView" />
+
+    <Button
+        android:id="@+id/confirmationBtn"
+        android:layout_width="216dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="76dp"
+        android:text="@string/confirmation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productDescriptortxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
